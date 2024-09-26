@@ -22,7 +22,7 @@ app.use(express.json());
 // example: localhost:3000/clothes?page=0&perPage=2
 app.get("/clothes", (req, res) => {
   const page = parseInt(req.query.page) || 0;
-  const perPage = parseInt(req.query.perPage) || 10;
+  const perPage = parseInt(req.query.perPage) || 5;
 
   fs.readFile("db.json", "utf8", (err, data) => {
     if (err) {
@@ -50,14 +50,6 @@ app.get("/clothes", (req, res) => {
 
 // POST route - Allows to add a new item
 // example: localhost:3000/clothes
-/*
-  body: {
-    "image": "https://your-image-url.com/image.png",
-    "name": "T-shirt",
-    "price": "10",
-    "rating": 4
-  }
-*/
 app.post("/clothes", (req, res) => {
   const { image, name, price, rating } = req.body;
 
@@ -99,14 +91,6 @@ app.post("/clothes", (req, res) => {
 
 // PUT route - Allows to update an item
 // example: localhost:3000/clothes/1
-/*
-  body: {
-    "image": "https://your-image-url.com/image.png",
-    "name": "T-shirt",
-    "price": "10",
-    "rating": 4
-  }
-*/
 app.put("/clothes/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const { image, name, price, rating } = req.body;
