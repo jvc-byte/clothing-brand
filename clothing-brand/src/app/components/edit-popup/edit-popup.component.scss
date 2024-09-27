@@ -1,0 +1,19 @@
+.form-wrapper {
+  .row {
+    span {
+      flex: 1;
+    }
+
+    input {
+      flex: 3;
+      border-radius: 5px;
+      border: 3px solid rgba($color: #0672fc, $alpha: 0.5);
+      color: #022f69;
+      font-weight: 700;
+    }
+  }
+
+  .rating {
+    margin-top: 0.5rem;
+  }
+}
