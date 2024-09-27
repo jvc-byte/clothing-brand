@@ -107,17 +107,17 @@
     },
     {
       "id": 16,
-      "image": "images/products/image1.jpg",
-      "name": "T-shirt",
-      "price": "10",
-      "rating": 4
+      "image": "images/products/image2.jpg",
+      "name": "testProduct-1",
+      "price": "20",
+      "rating": 3
     },
     {
       "id": 17,
       "image": "images/products/image2.jpg",
-      "name": "T-shirt",
-      "price": "10",
-      "rating": 4
+      "name": "testProduct-2",
+      "price": "23",
+      "rating": 2
     }
   ]
 }
