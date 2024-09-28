@@ -8,7 +8,7 @@ import {
   FormsModule,
   ValidatorFn,
   Validators,
-  ReactiveFormsModule
+  ReactiveFormsModule,
 } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 import { ButtonModule } from 'primeng/button';
@@ -22,7 +22,7 @@ import { ButtonModule } from 'primeng/button';
     FormsModule,
     RatingModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   templateUrl: './edit-popup.component.html',
   styleUrl: './edit-popup.component.scss',
@@ -63,7 +63,7 @@ export class EditPopupComponent {
   }
 
   onConfirm() {
-    const {name, image, price, rating} = this.productForm.value;
+    const { name, image, price, rating } = this.productForm.value;
     this.confirm.emit({
       name: name || '',
       image: image || '',
@@ -71,7 +71,6 @@ export class EditPopupComponent {
       rating: rating || 0,
       id: this.product.id || 0,
     });
-
 
     this.display = !this.display;
     this.displayChange.emit(this.display);
@@ -83,7 +82,7 @@ export class EditPopupComponent {
     this.displayChange.emit(this.display);
   }
 
-  ngOnChanges(){
+  ngOnChanges() {
     this.productForm.patchValue(this.product);
   }
 }
