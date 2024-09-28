@@ -11,6 +11,10 @@
       color: #022f69;
       font-weight: 700;
     }
+
+    input.ng-invalid {
+      border: 3px solid red;
+    }
   }
 
   .rating {
