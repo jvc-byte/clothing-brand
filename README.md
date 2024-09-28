@@ -20,11 +20,12 @@ Make sure you have the following installed:
    ```
 
 2. **Install dependencies**:
-For the front-end:
-   ```bash
-   npm install
-   ```
-For the back-end:
+   
+   For the front-end:
+    ```bash
+    npm install
+    ```
+   For the back-end:
    ```bash
    cd ../server
    npm install
@@ -33,11 +34,11 @@ For the back-end:
 ### Running the Application
 
 Start the development server:
-For the front-end:
-```bash
-cd ../clothing-brand
-npm start
-```
+   For the front-end:
+   ```bash
+   cd ../clothing-brand
+   npm start
+   ```
 For the back-end running on port 3000:
    ```bash
    cd ../server
