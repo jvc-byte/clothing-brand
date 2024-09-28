@@ -34,12 +34,13 @@ Make sure you have the following installed:
 ### Running the Application
 
 Start the development server:
+
    For the front-end:
    ```bash
    cd ../clothing-brand
    npm start
    ```
-For the back-end running on port 3000:
+   For the back-end running on port 3000:
    ```bash
    cd ../server
    node server.js
